@@ -1,0 +1,15 @@
+# Ignore virtual environment folder
+venv/
+
+# Ignore environment variables file
+.env
+
+# Ignore the travel_agents folder
+travel_agents/
+
+# Ignore specific file
+agents2.py
+
+# Python cache
+__pycache__/
+
