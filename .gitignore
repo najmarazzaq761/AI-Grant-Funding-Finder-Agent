@@ -9,6 +9,7 @@ travel_agents/
 
 # Ignore specific file
 agents2.py
+testing.py
 
 # Python cache
 __pycache__/

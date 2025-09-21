@@ -1,5 +1,3 @@
-# agents.py
-
 from crewai import Agent, LLM
 from tools import scholarship_scraper_tool
 from crewai import LLM
@@ -7,7 +5,6 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-#meta-llama/llama-4-maverick-17b-128e-instruct
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 llm=LLM(
@@ -16,6 +13,7 @@ llm=LLM(
         api_key=GROQ_API_KEY
     )
 
+
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
     role="Scholarship Data Collection Expert",
@@ -23,7 +21,7 @@ data_fetch_expert = Agent(
     backstory="An expert researcher who knows how to collect and extract scholarship data.",
     tools=[scholarship_scraper_tool],
     llm=llm,
-    allow_delegation=False,
+    allow_delegation=True,
 )
 
 # Agent 2: Matching
@@ -33,7 +31,8 @@ matching_expert = Agent(
     backstory="An AI expert who analyzes profiles and finds the most suitable scholarships.",
     tools=[],
     llm=llm,
-    allow_delegation=False,
+    verbose=True,
+    allow_delegation=True,
 )
 
 # Agent 3: Response Generation

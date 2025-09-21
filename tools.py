@@ -1,16 +1,14 @@
-
-from logging import warning
 import requests
 from bs4 import BeautifulSoup
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-from crewai import Agent, Task, Crew
 from crewai.tools import tool
+import streamlit as st
 
 
-# @st.cache_data
+@st.cache_data
 def fetch_all_links(base_url):
     """Fetch all internal links from the website's base URL."""
     response = requests.get(base_url)
@@ -29,7 +27,7 @@ def fetch_all_links(base_url):
     return list(links)
 
 
-# @st.cache_data
+@st.cache_data
 def load_data(base_url="https://www.mastersportal.com/"):
     """Load data from all pages of the website."""
     all_links = fetch_all_links(base_url)
@@ -39,18 +37,18 @@ def load_data(base_url="https://www.mastersportal.com/"):
             loader = WebBaseLoader([link])
             all_data.extend(loader.load())
         except Exception as e:
-            warning(f"Failed to load data from {link}: {e}")
+            st.warning(f"Failed to load data from {link}: {e}")
     return all_data
 
 
-# @st.cache_data
+@st.cache_data
 def split_data(_data):
     """Split data into chunks."""
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500)
     return text_splitter.split_documents(_data)
 
 
-# @st.cache_resource
+@st.cache_resource
 def create_vector_store(_docs):
     """Create FAISS vector store."""
     if not _docs:
@@ -70,9 +68,9 @@ def scrape_and_embed(base_url="https://www.mastersportal.com/"):
     return vectorstore
 
 
-# ------------------------------
+
 # Custom Tool for Agent
-# ------------------------------
+
 @tool("scholarship_scraper_tool")
 def scholarship_scraper_tool(query: str):
     """
@@ -80,8 +78,9 @@ def scholarship_scraper_tool(query: str):
     """
     vectorstore = scrape_and_embed("https://www.mastersportal.com/")
     if vectorstore:
-        retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+        retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
         results = retriever.get_relevant_documents(query)
         return "\n\n".join([doc.page_content for doc in results])
     else:
         return "No data could be retrieved."
+

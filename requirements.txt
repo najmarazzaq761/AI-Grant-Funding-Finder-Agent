@@ -4,3 +4,5 @@ crewai
 langchain 
 langchain_community
 crewai_tools
+sentence-transformers 
+faiss-cpu 
