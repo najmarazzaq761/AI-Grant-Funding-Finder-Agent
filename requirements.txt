@@ -1,10 +1,8 @@
 streamlit
 crewai[tools]
 crewai
-langchain
-langchain_community
+langchain==0.2.16
+langchain_community==0.2.11
 crewai_tools
 sentence-transformers
 faiss-cpu
-pysqlite3-binary
-
