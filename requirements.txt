@@ -6,4 +6,5 @@ langchain_community
 crewai_tools
 sentence-transformers
 faiss-cpu
-# chromadb is NOT included since FAISS is used instead
+pysqlite3-binary
+
