@@ -2,6 +2,8 @@ import streamlit as st
 from crewai import Crew
 from tasks import data_fetching_task, matching_task, response_generation_task
 from agents import data_fetch_expert, matching_expert, response_expert
+import sys
+import sqlite3
 
 
 # Custom CSS for Styling
