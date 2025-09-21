@@ -60,58 +60,5 @@ AI-Grant-Funding-Finder-Agent/
    cd AI-Grant-Funding-Finder-Agent
 ````
 
-2. **Install Dependencies**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the App**
-
-   ```bash
-   streamlit run frontend.py
-   ```
-
-4. Open in your browser at:
-   👉 [http://localhost:8501](http://localhost:8501)
-
----
-
-## ✅ Example Workflow (Student)
-
-1. Select **Student** from the sidebar.
-2. Fill out the form (Age, Country, Degree Completed, GPA/Percentage, Field of Study, Financial Need).
-3. Click **Find Scholarships**.
-4. Get a list of matched opportunities ranked by relevance.
-5. Generate a **personalized report** and download it.
-
----
-
-## 📌 Roadmap
-
-* [x] Student scholarship finder
-* [ ] Researcher grant finder
-* [ ] Startup founder funding finder
-* [ ] Multi-source scraping (Scholarship portals, Crunchbase, Grant databases)
-* [ ] API integration for real-time funding data
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👩‍💻 Author
-
-**Najma Razzaq** – AI Engineer 
-
-🌐 [LinkedIn](https://www.linkedin.com/in/najmarazzaq) | [GitHub](https://github.com/najmarazzaq761) | [YouTube](https://youtube.com/@aiwithnajmaRazzaq)
 
