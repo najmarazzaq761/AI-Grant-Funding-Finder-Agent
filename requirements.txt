@@ -1,8 +1,9 @@
 streamlit
 crewai[tools]
 crewai
-langchain 
+langchain
 langchain_community
 crewai_tools
-sentence-transformers 
-faiss-cpu 
+sentence-transformers
+faiss-cpu
+# chromadb is NOT included since FAISS is used instead
