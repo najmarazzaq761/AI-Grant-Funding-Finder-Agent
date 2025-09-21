@@ -21,7 +21,7 @@ data_fetch_expert = Agent(
     backstory="An expert researcher who knows how to collect and extract scholarship data.",
     tools=[scholarship_scraper_tool],
     llm=llm,
-    allow_delegation=True,
+    allow_delegation=False,
 )
 
 # Agent 2: Matching
@@ -31,8 +31,7 @@ matching_expert = Agent(
     backstory="An AI expert who analyzes profiles and finds the most suitable scholarships.",
     tools=[],
     llm=llm,
-    verbose=True,
-    allow_delegation=True,
+    allow_delegation=False,
 )
 
 # Agent 3: Response Generation
