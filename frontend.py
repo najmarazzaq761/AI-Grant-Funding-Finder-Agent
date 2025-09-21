@@ -72,7 +72,7 @@ user_role = st.sidebar.radio("Are you a:", ["Landing Page", "Student", "Research
 # Landing Page
 
 if user_role == "Landing Page":
-    st.title("🎓 Opportunities Finder")
+    st.title("🎓 OpportuneAI: Multi-Agent Opportunity Finder")
     st.subheader("About the Opportunities Finder")
     st.write("""
     The **Opportunities Finder** helps students, researchers, and startup founders discover the best scholarships, 
