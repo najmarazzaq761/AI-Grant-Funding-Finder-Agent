@@ -6,6 +6,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from crewai.tools import tool
 import streamlit as st
+import sys
+import sqlite3
 
 
 @st.cache_data
