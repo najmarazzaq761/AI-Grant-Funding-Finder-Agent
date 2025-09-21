@@ -58,7 +58,3 @@ AI-Grant-Funding-Finder-Agent/
    ```bash
    git clone https://github.com/najmarazzaq761/AI-Grant-Funding-Finder-Agent.git
    cd AI-Grant-Funding-Finder-Agent
-````
-
-
-
