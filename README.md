@@ -1,5 +1,7 @@
 # 🎓 AI Grant & Scholarship Finder Agent
 
+View demo here: https://www.linkedin.com/posts/najmarazzaq_ai-multiagent-hackathon-activity-7379540138453921792-prMF?utm_source=share&utm_medium=member_android&rcm=ACoAAEDu8tMByw4ObYznxS41K9K33AB-11Dv_0o
+
 An AI-powered application that helps **students**, **researchers**, and **startup founders** discover relevant **scholarships, grants, fellowships, and funding opportunities** tailored to their profile.  
 
 Built with **CrewAI + Streamlit**, this tool scrapes opportunities from trusted sources, matches them with the user’s background, and generates a **personalized recommendation report**.
@@ -110,5 +112,6 @@ This project is licensed under the **MIT License**.
 **Najma Razzaq** – Data Scientist | AI Engineer | Generative AI Enthusiast
 
 🌐 [LinkedIn](https://www.linkedin.com/in/najmarazzaq) | [GitHub](https://github.com/najmarazzaq761) | [YouTube](https://youtube.com/@aiwithnajmaRazzaq)
+
 
 
