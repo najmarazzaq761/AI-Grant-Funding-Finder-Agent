@@ -8,4 +8,5 @@ crewai_tools
 langchain-huggingface
 sentence-transformers
 faiss-cpu
+langchain-google-genai
 
