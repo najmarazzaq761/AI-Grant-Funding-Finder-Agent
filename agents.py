@@ -3,7 +3,8 @@ from tools import scholarship_scraper_tool
 from crewai import LLM
 from dotenv import load_dotenv
 import os
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
+# from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 # GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -13,8 +14,7 @@ load_dotenv()
 #         base_url="https://api.groq.com/openai/v1",
 #         api_key=GROQ_API_KEY
 #     )
-llm =ChatGoogleGenerativeAI(model = "gemini-2.5-flash",
- api_key=os.getenv("GEMINI_API_KEY"))
+llm = ChatGroq(model="qwen/qwen3-32b",  api_key=os.getenv("GROQ_API_KEY"))
 
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
