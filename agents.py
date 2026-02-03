@@ -3,6 +3,7 @@ from tools import scholarship_scraper_tool
 from crewai import LLM
 from dotenv import load_dotenv
 import os
+from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 # GROQ_API_KEY = os.getenv("GROQ_API_KEY")
