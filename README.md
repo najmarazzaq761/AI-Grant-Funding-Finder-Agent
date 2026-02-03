@@ -1,5 +1,5 @@
 # 🎓 AI Grant & Scholarship Finder Agent
-
+## Try live here: https://ai-grant-funding-finder-agent.streamlit.app/
 ### View demo 
 
 https://github.com/user-attachments/assets/2b41ed41-3ccb-4e63-a410-25bc66be3374
@@ -114,6 +114,7 @@ This project is licensed under the **MIT License**.
 **Najma Razzaq** – Data Scientist | AI Engineer | Generative AI Enthusiast
 
 🌐 [LinkedIn](https://www.linkedin.com/in/najmarazzaq) | [GitHub](https://github.com/najmarazzaq761) | [YouTube](https://youtube.com/@aiwithnajmaRazzaq)
+
 
 
 
