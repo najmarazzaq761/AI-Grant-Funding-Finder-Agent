@@ -2,7 +2,7 @@ pysqlite3-binary
 streamlit
 crewai[tools]
 crewai
-langchain
+langchain == 0.3.0
 langchain_community
 crewai_tools
 langchain-huggingface
