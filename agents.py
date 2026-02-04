@@ -16,7 +16,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 #     )
 llm = LLM(
     model="groq/llama-3.1-8b-instant",
-    temperature=0.5
+    temperature=0.2
 )
 
 # Agent 1: Data Fetching
