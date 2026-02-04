@@ -15,8 +15,11 @@ load_dotenv()
 #         base_url="https://api.groq.com/openai/v1",
 #         api_key=GROQ_API_KEY
 #     )
+# llm = LLM(
+#     model="huggingface/meta-llama/Llama-3.1-8B-Instruct"
+# )
 llm = LLM(
-    model="huggingface/meta-llama/Llama-3.1-8B-Instruct"
+    model="huggingface/deepseek-ai/DeepSeek-V3.2"
 )
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
