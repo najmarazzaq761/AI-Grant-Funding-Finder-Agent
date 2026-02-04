@@ -9,12 +9,15 @@ load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-llm=LLM(
-        model="meta-llama/llama-3.1-8b-instant",
-        base_url="https://api.groq.com/openai/v1",
-        api_key=GROQ_API_KEY
-    )
-# llm = ChatGroq(model="qwen/qwen3-32b",  api_key=os.getenv("GROQ_API_KEY"))
+# llm=LLM(
+#         model="meta-llama/llama-3.1-8b-instant",
+#         base_url="https://api.groq.com/openai/v1",
+#         api_key=GROQ_API_KEY
+#     )
+llm = LLM(
+    model="groq/llama-3.1-8b-instant",
+    temperature=0.5
+)
 
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
