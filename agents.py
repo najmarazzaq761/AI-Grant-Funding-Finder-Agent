@@ -16,7 +16,8 @@ load_dotenv()
 #         api_key=GROQ_API_KEY
 #     )
 llm = LLM(
-    model="huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    model="huggingface/meta-llama/Llama-3.1-8B-Instruct"
+    meta-llama/Llama-3.1-8B-Instruct
 )
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
