@@ -15,10 +15,8 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 #         api_key=GROQ_API_KEY
 #     )
 llm = LLM(
-    model="groq/gpt-oss-120b",
-    temperature=0.2
+    model="huggingface/meta-llama/Meta-Llama-3.1-8B-Instruct"
 )
-
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
     role="Scholarship Data Collection Expert",
