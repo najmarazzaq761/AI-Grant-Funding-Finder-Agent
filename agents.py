@@ -15,7 +15,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 #         api_key=GROQ_API_KEY
 #     )
 llm = LLM(
-    model="groq/qwen3-32b",
+    model="groq/gpt-oss-120b",
     temperature=0.2
 )
 
