@@ -1,26 +1,17 @@
+# importing libraries
 from crewai import Agent, LLM
 from tools import scholarship_scraper_tool
 from crewai import LLM
 from dotenv import load_dotenv
 import os
 from langchain_groq import ChatGroq
-# from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
-# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
-
-# llm=LLM(
-#         model="meta-llama/llama-3.1-8b-instant",
-#         base_url="https://api.groq.com/openai/v1",
-#         api_key=GROQ_API_KEY
-#     )
-# llm = LLM(
-#     model="huggingface/meta-llama/Llama-3.1-8B-Instruct"
-# )
+# llm configuration 
 llm = LLM(
     model="huggingface/deepseek-ai/DeepSeek-V3.2"
 )
+
 # Agent 1: Data Fetching
 data_fetch_expert = Agent(
     role="Scholarship Data Collection Expert",
