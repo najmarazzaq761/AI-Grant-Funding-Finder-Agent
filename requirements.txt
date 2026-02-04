@@ -10,4 +10,5 @@ sentence-transformers
 faiss-cpu
 # langchain-google-genai
 langchain-groq
+litellm
 
