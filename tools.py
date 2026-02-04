@@ -72,8 +72,9 @@ def scrape_and_embed(base_url="https://www.mastersportal.com/"):
 
 @tool("scholarship_scraper_tool")
 def scholarship_scraper_tool(query: str):
-    """
-    Custom tool: scrapes MastersPortal and performs semantic search.
+"""
+    Use this tool for ALL scholarship searching and scraping.
+    Do NOT use any other search or browsing tools.
     """
     vectorstore = scrape_and_embed("https://www.mastersportal.com/")
     if vectorstore:
